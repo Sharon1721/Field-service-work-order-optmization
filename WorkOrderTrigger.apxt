@@ -1,0 +1,9 @@
+trigger WorkOrderTrigger on WorkOrdercsv__c (before insert,after update) {
+
+    if(trigger.isafter && trigger.isinsert){
+        WorkOrderClass.workOrder(trigger.new);
+    }
+    if(Trigger.IsAfter && Trigger.IsUpdate){
+        CompletionMail.sendEmailMsg(Trigger.New);
+    }
+}
