@@ -1,0 +1,19 @@
+public class MyFirstTextClass {
+    public static void textClassMethod(){
+        integer aValue = 50;
+        integer bValue = 200;
+        integer CValue = aValue+bValue;
+        System.debug('sum of addition c = '+cValue);
+    }
+    public void textSecondMethod() {
+        String firstName = 'Sharonpushpa';
+        String secondName = 'Venkatesh';
+        System.Debug('My First Name is: '+firstName+''+SecondName);
+    }
+    public void textThirdMethod(){
+        string empName = 'Sharonpushpa';
+        integer empId =1221;
+        integer empSalary = 70000;
+        System.debug('Employee details are :' +empName+''+empId+''+empSalary);
+    }
+}
