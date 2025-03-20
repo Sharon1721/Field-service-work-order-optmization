@@ -1,0 +1,6 @@
+trigger AssignmentTrigger on Assignment__c (before insert) 
+{
+    if(Trigger.IsAfter && Trigger.IsInsert){
+        AssigningEmail.sendEmailmsg(Trigger.New);
+    }
+}
